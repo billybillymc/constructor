@@ -44,9 +44,10 @@ Dialogue = list[list[str]]  # [[user, assistant], ...]
 
 def load_seed_dialogues() -> list[Dialogue]:
     out = []
-    for line in (HERE / "seed_dialogues.jsonl").read_text(encoding="utf-8").splitlines():
-        if line.strip():
-            out.append(json.loads(line)["turns"])
+    for path in sorted(HERE.glob("seed_dialogues*.jsonl")):
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                out.append(json.loads(line)["turns"])
     return out
 
 
@@ -242,6 +243,26 @@ def arithmetic_drills(rng: random.Random) -> list[Dialogue]:
 
 
 # --------------------------------------------------------------------------- #
+# augmentation: users type lowercase and drop punctuation; the model should
+# not fall apart when they do
+# --------------------------------------------------------------------------- #
+
+def augment_casing(dialogues: list[Dialogue], rng: random.Random) -> list[Dialogue]:
+    """Every dialogue gets a lowercase variant: people type entirely in
+    lowercase (proper nouns included), and often drop the final punctuation.
+    Without systematic exposure the model treats 'caesar' as a stranger."""
+    variants: list[Dialogue] = []
+    for turns in dialogues:
+        first_user = turns[0][0]
+        varied = first_user.lower()
+        if rng.random() < 0.5 and varied.endswith((".", "!", "?")):
+            varied = varied[:-1]
+        if varied != first_user:
+            variants.append([[varied, turns[0][1]]] + [list(t) for t in turns[1:]])
+    return variants
+
+
+# --------------------------------------------------------------------------- #
 # tokenizer + packing
 # --------------------------------------------------------------------------- #
 
@@ -269,9 +290,12 @@ def main() -> int:
     donatus = mine_donatus(Path("data/corpus/works.jsonl"))
     morphology = morphology_drills(rng)
     arithmetic = arithmetic_drills(rng)
-    sources = {"seed": len(seed_dialogues), "donatus": len(donatus),
-               "morphology": len(morphology), "arithmetic": len(arithmetic)}
     dialogues = seed_dialogues + donatus + morphology + arithmetic
+    casing = augment_casing(dialogues, rng)
+    sources = {"seed": len(seed_dialogues), "donatus": len(donatus),
+               "morphology": len(morphology), "arithmetic": len(arithmetic),
+               "casing_variants": len(casing)}
+    dialogues += casing
     rng.shuffle(dialogues)
     print("dialogues:", json.dumps(sources), "| total", len(dialogues))
 

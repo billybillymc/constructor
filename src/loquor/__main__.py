@@ -116,7 +116,8 @@ def main(argv: list[str] | None = None) -> int:
                          "(default: data/processed, or data/processed/chat "
                          "for a chat checkpoint)")
     ap.add_argument("--tokens", type=int, default=200, help="tokens to generate")
-    ap.add_argument("--temperature", type=float, default=0.8)
+    ap.add_argument("--temperature", type=float, default=None,
+                    help="sampling temperature (default: 0.6 chat, 0.8 completion)")
     ap.add_argument("--top-k", type=int, default=50)
     ap.add_argument("--seed", type=int, default=None,
                     help="RNG seed for reproducible sampling (default: random)")
@@ -141,6 +142,8 @@ def main(argv: list[str] | None = None) -> int:
     device = detect_device()
     model, experiment = load_model(ckpt_path, device)
     chat = experiment in CHAT_EXPERIMENTS
+    if args.temperature is None:
+        args.temperature = 0.6 if chat else 0.8
     data_dir = args.data_dir or (CHAT_DATA_DIR if chat else Path("data/processed"))
     tokenizer = load_tokenizer(data_dir)
     if model.cfg.vocab_size != tokenizer.vocab_size:

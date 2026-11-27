@@ -1,0 +1,38 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+initialized from runs/03_muon/full_corpus_v1/ckpt_best.pt (experiment 03_muon, step 7500); vocab 16000 -> 16002
+model parameters: 53,165,568
+fine-tuning for 400 steps on 54,307 chat tokens -> runs\04_chat_sft\sft_v4
+step     25 | train 4.1254 | val 2.5951 | lr 1.00e-04 | 13s
+step     50 | train 2.6578 | val 1.8774 | lr 9.87e-05 | 35s
+step     75 | train 1.7930 | val 1.4980 | lr 9.56e-05 | 57s
+step    100 | train 1.2440 | val 1.2381 | lr 9.07e-05 | 80s
+step    125 | train 0.8735 | val 1.0206 | lr 8.44e-05 | 104s
+step    150 | train 0.6050 | val 0.8100 | lr 7.67e-05 | 127s
+step    175 | train 0.4380 | val 0.7124 | lr 6.82e-05 | 152s
+step    200 | train 0.3271 | val 0.5660 | lr 5.91e-05 | 175s
+step    225 | train 0.2508 | val 0.4784 | lr 4.98e-05 | 198s
+step    250 | train 0.2009 | val 0.4424 | lr 4.07e-05 | 222s
+step    275 | train 0.1699 | val 0.3791 | lr 3.23e-05 | 247s
+step    300 | train 0.1470 | val 0.3692 | lr 2.48e-05 | 270s
+step    325 | train 0.1357 | val 0.3206 | lr 1.86e-05 | 294s
+step    350 | train 0.1244 | val 0.3008 | lr 1.39e-05 | 318s
+step    375 | train 0.1149 | val 0.3062 | lr 1.10e-05 | 341s
+step    400 | train 0.1124 | val 0.3025 | lr 1.00e-05 | 364s
+
+=== final report ===
+best checkpoint: step 350
+val masked loss 0.3323 | perplexity     1.39
+
+=== chat samples (best checkpoint) ===
+> Salve!
+Salve! Quid tandem tibi vis?
+
+> Quis fuit Caesar?
+Marcus Tullius Cicero orator clarissimus et consul Romanus fuit, qui multas epistulas scripsit; ab Antonio occisus est.
+
+> Quot sunt duo et tria?
+Tria et tria sunt decem.
+
+> Scribe sententiam de amicitia.
+Amicus fidelis thesaurus magnus est: secundis rebus gaudium auget, adversis onus levat.
+
