@@ -1,12 +1,17 @@
 """Prompt a trained Latin LM from the command line.
 
-    python -m loquor "Gallia est omnis"      # one-shot completion
+    python -m loquor "Gallia est omnis"      # one-shot
     python -m loquor                          # interactive REPL
     python -m loquor --list                   # show available checkpoints
 
 By default the newest ``ckpt_best.pt`` under ``runs/`` is used; pick another
 with ``--ckpt``. Each checkpoint records which experiment produced it, and
 that experiment's model.py is loaded to rebuild the architecture.
+
+A chat-tuned checkpoint (04_chat_sft) is automatically spoken to through its
+chat template, with conversation history kept in the REPL. For base-model
+checkpoints, ``--fewshot`` wraps your prompt in a short Interrogatio/Responsum
+transcript so the model answers instead of free-associating.
 """
 
 from __future__ import annotations
@@ -22,6 +27,18 @@ from latin_lm.tokenizer import load_tokenizer
 from latin_lm.train_utils import detect_device, load_checkpoint
 
 EXPERIMENTS_DIR = Path("experiments")
+CHAT_EXPERIMENTS = {"04_chat_sft"}
+CHAT_DATA_DIR = Path("data/processed/chat")
+USER_TOK, ASSISTANT_TOK = "<|user|>", "<|assistant|>"
+
+FEWSHOT_PREFIX = (
+    "Interrogatio: Salve! Quid agis?\n"
+    "Responsum: Salve! Bene mecum agitur, gratias tibi.\n\n"
+    "Interrogatio: Quis fuit Vergilius?\n"
+    "Responsum: Vergilius poeta Romanus fuit, qui Aeneida scripsit.\n\n"
+    "Interrogatio: Quid est insula?\n"
+    "Responsum: Insula terra est quam undique aqua circumdat.\n\n"
+)
 
 
 def find_checkpoints(runs_dir: Path) -> list[Path]:
@@ -49,15 +66,43 @@ def load_model(ckpt_path: Path, device: str):
     return model, ckpt["experiment"]
 
 
-def complete(model, tokenizer, prompt: str, device: str,
-             tokens: int, temperature: float, top_k: int) -> str:
-    ids = [tokenizer.eot_id] + tokenizer.encode(prompt)
-    ids = ids[-model.cfg.block_size:]
+def generate_ids(model, ids: list[int], device: str,
+                 tokens: int, temperature: float, top_k: int) -> list[int]:
+    ids = ids[-(model.cfg.block_size - tokens):]
     idx = torch.tensor([ids], dtype=torch.long, device=device)
     out = model.generate(idx, max_new_tokens=tokens,
                          temperature=temperature, top_k=top_k)
-    text = tokenizer.decode(out[0].tolist())
-    return text.replace(tokenizer.eot_token, "").strip()
+    return out[0, len(ids):].tolist()
+
+
+def complete(model, tokenizer, prompt: str, device: str,
+             tokens: int, temperature: float, top_k: int) -> str:
+    ids = [tokenizer.eot_id] + tokenizer.encode(prompt)
+    generated = generate_ids(model, ids, device, tokens, temperature, top_k)
+    return tokenizer.decode(generated).replace(tokenizer.eot_token, "").strip()
+
+
+def chat_complete(model, tokenizer, history: list[tuple[str, str]], prompt: str,
+                  device: str, tokens: int, temperature: float, top_k: int) -> str:
+    text = "".join(f"{USER_TOK}{u}{ASSISTANT_TOK}{a}{tokenizer.eot_token}"
+                   for u, a in history)
+    text += f"{USER_TOK}{prompt}{ASSISTANT_TOK}"
+    generated = generate_ids(model, tokenizer.encode(text), device,
+                             tokens, temperature, top_k)
+    if tokenizer.eot_id in generated:
+        generated = generated[:generated.index(tokenizer.eot_id)]
+    return tokenizer.decode(generated).strip()
+
+
+def fewshot_complete(model, tokenizer, prompt: str, device: str,
+                     tokens: int, temperature: float, top_k: int) -> str:
+    text = FEWSHOT_PREFIX + f"Interrogatio: {prompt}\nResponsum:"
+    generated = generate_ids(model, [tokenizer.eot_id] + tokenizer.encode(text),
+                             device, tokens, temperature, top_k)
+    if tokenizer.eot_id in generated:
+        generated = generated[:generated.index(tokenizer.eot_id)]
+    answer = tokenizer.decode(generated)
+    return answer.split("Interrogatio:")[0].strip()
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -66,13 +111,17 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("prompt", nargs="*", help="prompt text; omit for a REPL")
     ap.add_argument("--ckpt", type=Path, default=None,
                     help="checkpoint file (default: newest runs/**/ckpt_best.pt)")
-    ap.add_argument("--data-dir", type=Path, default=Path("data/processed"),
-                    help="directory holding the trained tokenizer")
+    ap.add_argument("--data-dir", type=Path, default=None,
+                    help="directory holding the trained tokenizer "
+                         "(default: data/processed, or data/processed/chat "
+                         "for a chat checkpoint)")
     ap.add_argument("--tokens", type=int, default=200, help="tokens to generate")
     ap.add_argument("--temperature", type=float, default=0.8)
     ap.add_argument("--top-k", type=int, default=50)
     ap.add_argument("--seed", type=int, default=None,
                     help="RNG seed for reproducible sampling (default: random)")
+    ap.add_argument("--fewshot", action="store_true",
+                    help="wrap prompts in a Q/A transcript (base models only)")
     ap.add_argument("--list", action="store_true", help="list checkpoints and exit")
     args = ap.parse_args(argv)
 
@@ -90,22 +139,36 @@ def main(argv: list[str] | None = None) -> int:
         torch.manual_seed(args.seed)
 
     device = detect_device()
-    tokenizer = load_tokenizer(args.data_dir)
     model, experiment = load_model(ckpt_path, device)
+    chat = experiment in CHAT_EXPERIMENTS
+    data_dir = args.data_dir or (CHAT_DATA_DIR if chat else Path("data/processed"))
+    tokenizer = load_tokenizer(data_dir)
     if model.cfg.vocab_size != tokenizer.vocab_size:
         print(f"warning: checkpoint vocab {model.cfg.vocab_size} != tokenizer vocab "
               f"{tokenizer.vocab_size}; this checkpoint was trained with a different "
               f"tokenizer (pass the matching --data-dir)", file=sys.stderr)
 
+    history: list[tuple[str, str]] = []
+
     def respond(prompt: str) -> None:
-        print(complete(model, tokenizer, prompt, device,
-                       args.tokens, args.temperature, args.top_k))
+        if chat:
+            answer = chat_complete(model, tokenizer, history, prompt, device,
+                                   args.tokens, args.temperature, args.top_k)
+            history.append((prompt, answer))
+        elif args.fewshot:
+            answer = fewshot_complete(model, tokenizer, prompt, device,
+                                      args.tokens, args.temperature, args.top_k)
+        else:
+            answer = complete(model, tokenizer, prompt, device,
+                              args.tokens, args.temperature, args.top_k)
+        print(answer)
 
     if args.prompt:
         respond(" ".join(args.prompt))
         return 0
 
-    print(f"loquor — {ckpt_path} [{experiment}] on {device} "
+    mode = "chat" if chat else ("fewshot" if args.fewshot else "completion")
+    print(f"loquor — {ckpt_path} [{experiment}, {mode}] on {device} "
           f"(temp {args.temperature}, top-k {args.top_k}, {args.tokens} tokens)")
     print("empty line or Ctrl+C to quit")
     while True:

@@ -1,0 +1,33 @@
+# 04_chat_sft: supervised fine-tuning of the 03_muon model into a chat format.
+# Model architecture is identical to 02/03; vocab grows by the two chat
+# special tokens (<|user|>, <|assistant|>) appended to the 16k BPE tokenizer.
+
+[model]
+n_layer = 14
+n_head = 8
+n_embd = 512
+block_size = 512
+dropout = 0.05
+mlp_hidden = 1408
+rope_theta = 10000.0
+
+[train]
+seed = 1457
+data_dir = "data/processed/chat"
+out_dir = "runs"
+init_from = "runs/03_muon/full_corpus_v1/ckpt_best.pt"
+batch_size = 16
+grad_accum_steps = 1
+max_steps = 400
+lr = 1e-4
+min_lr_frac = 0.1
+warmup_steps = 20
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.0
+grad_clip = 1.0
+eval_interval = 25
+eval_batches = 20
+sample_tokens = 90
+sample_temperature = 0.7
+sample_top_k = 50

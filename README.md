@@ -15,7 +15,11 @@ experiments/
   01_gpt2_baseline/       GPT-2-style arch, AdamW + cosine (the reference)
   02_modern_arch/         RoPE + RMSNorm + SwiGLU + QK-norm, AdamW
   03_muon/                same arch as 02, Muon optimizer
-src/loquor/               CLI to prompt any trained checkpoint
+  04_chat_sft/            chat SFT of the 03 checkpoint on a built Latin
+                          dialogue dataset (masked loss, chat template)
+src/loquor/               CLI to prompt any trained checkpoint; speaks the
+                          chat template to chat checkpoints (--fewshot wraps
+                          base models in a Q/A transcript)
 configs/default.toml      data-pipeline config (corpus, normalization,
                           splits, tokenizer)
 data/                     HTML cache, corpus JSONL, encoded binaries
@@ -63,6 +67,10 @@ uv run train 01_gpt2_baseline --overfit   # sanity: overfit one batch
 uv run train 02_modern_arch --smoke       # 200-step end-to-end test
 uv run train 03_muon                      # real run
 uv run train 03 --resume runs/03_muon/<run>/ckpt_last.pt
+
+# chat SFT (04) builds its own dataset first:
+uv run python experiments/04_chat_sft/make_dataset.py
+uv run train 04_chat_sft --run-name sft_v1
 ```
 
 Every experiment logs step/train-loss/val-loss/lr to CSV, saves generated
