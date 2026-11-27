@@ -1,0 +1,30 @@
+# 01_gpt2_baseline: GPT-2-style architecture, plain AdamW + cosine schedule.
+# block_size 512 for comparability with later experiments on the full corpus.
+
+[model]
+n_layer = 6
+n_head = 6
+n_embd = 384
+block_size = 512
+dropout = 0.1
+bias = false
+
+[train]
+seed = 1457
+data_dir = "data/processed"
+out_dir = "runs"
+batch_size = 32
+grad_accum_steps = 1
+max_steps = 8000
+lr = 6e-4
+min_lr = 6e-5
+warmup_steps = 300
+weight_decay = 0.1
+beta1 = 0.9
+beta2 = 0.95
+grad_clip = 1.0
+eval_interval = 500
+eval_batches = 40
+sample_tokens = 250
+sample_temperature = 0.8
+sample_top_k = 50

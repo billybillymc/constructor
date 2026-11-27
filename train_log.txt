@@ -1,0 +1,120 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 13,698,816 (non-embedding: w/ tied head)
+training for 5000 steps -> runs\real_run_v1
+step    250 | train 6.2979 | val 6.1232 | lr 6.00e-04 | 37s
+step    500 | train 5.6971 | val 5.6263 | lr 5.95e-04 | 77s
+step    750 | train 5.3679 | val 5.3274 | lr 5.83e-04 | 116s
+step   1000 | train 5.1554 | val 5.1672 | lr 5.64e-04 | 155s
+step   1250 | train 5.0032 | val 5.0538 | lr 5.39e-04 | 195s
+step   1500 | train 4.8655 | val 4.9715 | lr 5.08e-04 | 234s
+step   1750 | train 4.7680 | val 4.9066 | lr 4.73e-04 | 273s
+step   2000 | train 4.6751 | val 4.8797 | lr 4.33e-04 | 313s
+step   2250 | train 4.5970 | val 4.8502 | lr 3.91e-04 | 352s
+step   2500 | train 4.5356 | val 4.8057 | lr 3.48e-04 | 391s
+step   2750 | train 4.4578 | val 4.7828 | lr 3.04e-04 | 431s
+step   3000 | train 4.4093 | val 4.7683 | lr 2.60e-04 | 471s
+step   3250 | train 4.3653 | val 4.7601 | lr 2.19e-04 | 510s
+step   3500 | train 4.3219 | val 4.7337 | lr 1.80e-04 | 550s
+step   3750 | train 4.2766 | val 4.7150 | lr 1.46e-04 | 590s
+step   4000 | train 4.2465 | val 4.7147 | lr 1.16e-04 | 631s
+step   4250 | train 4.2199 | val 4.7036 | lr 9.20e-05 | 671s
+step   4500 | train 4.2050 | val 4.6973 | lr 7.44e-05 | 711s
+step   4750 | train 4.1969 | val 4.7016 | lr 6.36e-05 | 751s
+step   5000 | train 4.1797 | val 4.6966 | lr 6.00e-05 | 792s
+
+=== final report ===
+best checkpoint: step 5000
+val  loss 4.6864 | perplexity   108.46
+test loss 4.6958 | perplexity   109.49
+loss curve: runs\real_run_v1\loss_curve.png
+
+=== samples ===
+--- sample 1 ---
+
+----
+1 Causa, quod non est ut, quod non debes. Hoc genus ipsum tuum, quod est maximum, ad bonam mentem et tibi, quod ex alio est, hoc primum non possis. Vale.
+
+CXLII. SENECA LUCILIO SUO SALUTEM
+
+Quod mihi in re publica scribis, et tibi et gratias agas, et quidem mihi et, si quid opus est, etiam si quid in hoc genere acciderit, quod me delectat, me ad illum cum maxime, quam me diligis, possim esse, quem tibi non modo satis diligenter attulerit sed etiam ut etiam videor et quod mihi et a te dictum est. 2 Quod si quandoque erit, in hoc quoque genus officii, quo mihi et dignitas et fides et fides
+--- sample 2 ---
+
+----
+Quorsus licet hoc, Lucili, quam tibi ex hoc primum a te res publica promittit, si modo apud te studia nostra adferre non potest, sed ne tua quidem in nostra potestate est.
+
+(***)
+
+(*****)
+
+(***)
+
+(*******)
+
+(*****)
+
+(***)
+
+(*******)
+
+(*****)
+
+(*****)
+
+(*******)
+
+(*******)
+
+(*******)
+
+(*********)
+
+(***)
+
+(*****)
+
+(******)
+
+(*********)
+
+(*******)
+
+(*****)
+
+(*******)
+
+(***)
+
+(*******)
+
+(*****)
+
+(*********)
+
+(*******)
+
+(***)
+(*********)
+
+(*********)
+
+(
+--- sample 3 ---
+
+----
+Igitur hic dies, nec me adhuc, ut soletis,
+placet, in nobis tantummodo, sed et in omni
+malitate tuebare:
+multi sunt, qui sunt, cum corpore toto
+quique leves cursu, ut fit, et te
+servus hic, qui sis amabilis, ego sum.
+
+Terra, quae non in te plus quam in me
+memoriam, tu laudas, sed tua fata proferebis;
+quidve vides? non invitum est mea carmina,
+quae nos in lento nos adsire recurrimus oris.
+sed te, si quis te mutaverit,
+cum subito mihi non est, dum me, 'fortuna' dixit
+'satis exhibuit,' et 'non sum factus et ipsum
+auro ride, mea me voce rogavit,
+sed me pietas, cui debita est, negavit
+me pate

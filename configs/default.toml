@@ -1,0 +1,69 @@
+# All configuration for the Latin LM pipeline lives in this file.
+# A copy is saved alongside every training run.
+
+[scrape]
+base_url = "https://thelatinlibrary.com"
+user_agent = "LatinCorpusResearchBot/0.1 (personal linguistics research; polite: 1 req/s)"
+delay_seconds = 1.0
+cache_dir = "data/raw_html"
+corpus_path = "data/corpus/works.jsonl"
+# Minimum cleaned-text length (chars) for a page to count as a text page
+# rather than a sub-index of links.
+min_text_chars = 600
+# Discover every author listed on the site's register index pages. Set
+# discover = false (and fill [scrape.authors]) to scrape a hand-picked subset.
+discover = true
+# Course material / teaching pages on the main index, not source texts.
+discover_exclude = [
+    "ll1/", "ll2/", "courses/", "caes/", "catullus/", "livius/", "sallust/",
+    "satire/", "virgil/", "historians/", "imperialism/", "law/",
+    "indices.html", "epubs.html",
+    # Site meta-pages that link to every text (not authors).
+    "cred.html", "about.html", "technical.html",
+]
+
+# Register label -> index page listing that register's authors.
+[scrape.site_indexes]
+classical = "index.html"
+christian = "christian.html"
+medieval = "medieval.html"
+neolatin = "neo.html"
+misc = "misc.html"
+
+# Stale-link fixes: the old Caesar index page links to directories that moved.
+[scrape.url_rewrites]
+"gallic/" = "caesar/"
+"civil/" = "caesar/"
+"incerti/" = "caesar/"
+
+# Hand-picked additions/overrides (name = index page); crawled before
+# discovery and labeled register "classical".
+[scrape.authors]
+
+[normalize]
+# Normalization is a linguistic choice; every step here is switchable.
+unicode_form = "NFC"      # applied last; "NFC" or "NFD" or "none"
+strip_macrons = true       # remove combining macrons and breves (ā -> a)
+lowercase = false          # keep original case by default
+fold_uv = false            # if true: v -> u (and V -> U)
+fold_ij = false            # if true: j -> i (and J -> I)
+collapse_whitespace = true # collapse runs of spaces/tabs; keep line structure
+
+[split]
+seed = 1457
+train_frac = 0.90
+val_frac = 0.05
+test_frac = 0.05
+# Works larger than this fraction of the corpus are forced into train, so a
+# single giant work (e.g. Livy's Ab Urbe Condita) cannot swallow val or test.
+big_work_frac = 0.02
+manifest_path = "data/processed/split_manifest.json"
+
+[tokenizer]
+kind = "bpe"               # "bpe" or "char"
+vocab_size = 16000         # for bpe; char vocab is derived from the data
+out_dir = "data/processed"
+eot_token = "<|endoftext|>"
+
+# Model and training hyperparameters live with each experiment:
+# experiments/<name>/config.toml

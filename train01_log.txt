@@ -1,0 +1,114 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 16,770,816
+training for 8000 steps -> runs\01_gpt2_baseline\full_corpus_v1
+step    500 | train 6.4532 | val 6.3920 | lr 5.99e-04 | 94s
+step   1000 | train 5.9676 | val 6.0029 | lr 5.89e-04 | 191s
+step   1500 | train 5.6251 | val 5.7114 | lr 5.68e-04 | 288s
+step   2000 | train 5.4600 | val 5.5352 | lr 5.38e-04 | 385s
+step   2500 | train 5.2786 | val 5.4304 | lr 4.98e-04 | 482s
+step   3000 | train 5.1873 | val 5.3348 | lr 4.52e-04 | 581s
+step   3500 | train 5.1227 | val 5.2675 | lr 4.01e-04 | 681s
+step   4000 | train 5.0286 | val 5.1920 | lr 3.47e-04 | 780s
+step   4500 | train 4.9520 | val 5.1672 | lr 2.92e-04 | 878s
+step   5000 | train 4.8806 | val 5.1213 | lr 2.38e-04 | 976s
+step   5500 | train 4.8668 | val 5.0890 | lr 1.89e-04 | 1,074s
+step   6000 | train 4.8085 | val 5.0681 | lr 1.45e-04 | 1,173s
+step   6500 | train 4.7898 | val 5.0294 | lr 1.09e-04 | 1,271s
+step   7000 | train 4.7531 | val 5.0124 | lr 8.22e-05 | 1,369s
+step   7500 | train 4.7567 | val 4.9989 | lr 6.56e-05 | 1,467s
+step   8000 | train 4.7252 | val 4.9977 | lr 6.00e-05 | 1,565s
+
+=== final report ===
+best checkpoint: step 8000
+val  loss 4.9911 | perplexity   147.09
+test loss 5.1167 | perplexity   166.78
+loss curve: runs\01_gpt2_baseline\full_corpus_v1\loss_curve.png
+
+=== samples ===
+--- sample 1 ---
+
+----
+I. C. PLINIUS COMINRINIO V.
+
+1 Harum in hac controversia, sive in Italia vel in Thracia seu in Italia sive in Gallia vel in Italia seu in Italia vel in Italia aut in Africa in Italia, sive in Italia siue in mari terrarum sive in Europa in Africa, sub Italiae finibus, contra Afros, seu in Italia vel in Italiam, a septentrione vel in Germania, a septentrione Adriano mari, a septentrione freto, a septentrione meridiano et a septentrione exortus et in septentrione ad occidentem, a septentrione et septentrione, a septentrione terrae terrae Ponto. 2 In ea regione, quae in Africa est, in septen
+--- sample 2 ---
+
+----
+Utilius Felix, quae nunc nobis ad me
+expectat fortuna tua.
+
+2. COLLHILOLLA
+
+Malumni, Caesar,
+Et Musa (steriore fuit),
+
+Incipit auo Nerone
+
+Non.
+
+4. COLLAUS
+
+Timium Marcum, Catone,
+
+Viribus Marco,
+Mente mihi, Musa,
+
+Mente, Caesar,
+
+Te, Caesar, tuas
+Te
+Andigiliores,
+
+Criscilio,
+
+Cunctane, Rufine,
+
+Vellari,
+
+Lauda,
+Te, Caesar, Caesar,
+
+Et, Caesar, Augustus,
+Et si Caesar me in
+
+Corpora
+
+Vellet; sed si quis Caesar
+
+Crister, Caesar,
+Claudit
+
+Fracula et fractis
+
+Callida,
+Turea
+Digura,
+Camena, quae non sunt
+Sit, Caesar,
+Augusta,
+Tanquam Musa,
+Et Musa (fors enim
+--- sample 3 ---
+
+----
+PPISTASPIO ILAM
+
+CAP. VI.
+Tresbyter, qui de rebus propriis, quas de quibus rebus ecclesiasticis de iure et de causis ecclesiasticis potestatibus et de officiis ecclesiasticis, de iure suo, sed de quo agitur, de iure suo.
+
+Idem ERBOGESSIT CONBICARDICTO POMAE PROLOGARTA TAVENTISSIMO
+
+De iure communi.
+
+CAP. IV.
+Firmiter per ordinem ecclesiasticae consuetudines et consuetudines in ea parte tractentur.
+
+Clemens III.
+
+De iure civili.
+
+Super eo, quod ex delegatione clerici saeculares clerici super electione sua ecclesiae per loca iuraverunt.
+
+Ex concilio generali.
+
+Ex concilio in concilio Later

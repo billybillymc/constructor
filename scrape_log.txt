@@ -1,0 +1,393 @@
+﻿discovered 316 author pages
+[classical/Ammianus] 1 works, 125,752 words
+[classical/Apuleius] 7 works, 113,487 words
+[classical/Augustus] 2 works, 5,329 words
+[classical/Aurelius Victor] 3 works, 24,488 words
+[classical/Caesar] 5 works, 113,250 words
+[classical/Cato] 2 works, 17,023 words
+uv :     warning: missing page https://thelatinlibrary.com/78b
+At line:1 char:302
++ ... lainText' } catch {} } }; uv run scrape > scrape_log.txt 2>&1; Get-Co ...
++                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (    warning: mi...library.com/78b:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[classical/Catullus] 1 works, 13,323 words
+    warning: missing page https://thelatinlibrary.com/cic.html
+    warning: missing page https://thelatinlibrary.com/cic.html
+    warning: missing page https://thelatinlibrary.com/cic.html
+    warning: missing page https://thelatinlibrary.com/cic.html
+[classical/Cicero] 58 works, 1,000,482 words
+[classical/Claudian] 4 works, 15,289 words
+[classical/Curtius Rufus] 1 works, 70,844 words
+[classical/Ennius] 1 works, 1,210 words
+[classical/Eutropius] 1 works, 18,546 words
+[classical/Florus] 1 works, 26,144 words
+[classical/Frontinus] 6 works, 37,216 words
+[classical/Gellius] 2 works, 89,848 words
+[classical/Historia Augusta] 30 works, 112,949 words
+[classical/Horace] 6 works, 44,312 words
+[classical/Justin] 2 works, 64,056 words
+[classical/Juvenal] 16 works, 25,097 words
+[classical/Livy] 2 works, 524,152 words
+[classical/Lucan] 1 works, 51,014 words
+[classical/Lucretius] 1 works, 46,655 words
+[classical/Martial] 2 works, 59,066 words
+[classical/Nepos] 27 works, 28,730 words
+    warning: missing page https://thelatinlibrary.com/ovid/ovid/ovid.ponto.shtml
+[classical/Ovid] 9 works, 219,441 words
+[classical/Persius] 1 works, 4,521 words
+[classical/Petronius] 2 works, 31,965 words
+[classical/Phaedrus] 2 works, 12,027 words
+[classical/Plautus] 21 works, 182,589 words
+[classical/Pliny Maior] 1 works, 59,927 words
+[classical/Pliny Minor] 2 works, 88,788 words
+[classical/Propertius] 1 works, 25,577 words
+[classical/Quintilian] 2 works, 225,895 words
+[classical/Sallust] 12 works, 51,137 words
+[classical/Seneca Maior] 3 works, 99,548 words
+[classical/Seneca Minor] 24 works, 325,820 words
+[classical/Silius Italicus] 1 works, 76,452 words
+[classical/Statius] 3 works, 95,028 words
+[classical/Suetonius] 16 works, 78,451 words
+[classical/Sulpicia] 1 works, 261 words
+[classical/Tacitus] 5 works, 162,002 words
+[classical/Terence] 6 works, 55,142 words
+[classical/Tibullus] 1 works, 12,923 words
+[classical/Valerius Flaccus] 1 works, 37,370 words
+[classical/Valerius Maximus] 1 works, 80,612 words
+[classical/Varro] 2 works, 77,638 words
+[classical/Velleius] 1 works, 26,167 words
+[classical/Vergil] 23 works, 83,595 words
+[classical/Vitruvius] 1 works, 57,764 words
+[christian/Abelard] 3 works, 41,776 words
+[christian/Alcuin] 2 works, 13,769 words
+[christian/Ambrose] 4 works, 37,745 words
+[christian/Anselm] 2 works, 7,073 words
+    warning: empty page https://thelatinlibrary.com/aquinas/epist.shtml
+    warning: empty page https://thelatinlibrary.com/aquinas/princ.shtml
+[christian/Aquinas] 3 works, 14,594 words
+[christian/Arnobius] 1 works, 69,312 words
+[christian/Arnulf of Lisieux] 1 works, 185 words
+    warning: missing page https://thelatinlibrary.com/christian
+    warning: missing page https://thelatinlibrary.com/christian
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Augustine] 3 works, 623,405 words
+[christian/Bede] 3 works, 86,942 words
+[christian/Benedict] 1 works, 13,334 words
+[christian/Berengar] 1 works, 5,366 words
+[christian/Bernard of Clairvaux] 1 works, 8,393 words
+[christian/Bernard of Cluny] 1 works, 16,213 words
+[christian/Bonaventure] 1 works, 10,169 words
+[christian/Carmen de Martyrio] 1 works, 2,690 words
+[christian/Cassiodorus] 5 works, 128,280 words
+[christian/Christian Creeds] 1 works, 883 words
+[christian/Commodianus] 3 works, 15,204 words
+[christian/Decretum Gelasianum] 1 works, 2,017 words
+[christian/Dies Irae] 1 works, 210 words
+[christian/Egeria] 1 works, 17,874 words
+[christian/Ennodius] 1 works, 4,806 words
+[christian/Eucherius] 1 works, 3,781 words
+[christian/Eugippius] 1 works, 11,463 words
+[christian/Gregorius Magnus] 1 works, 760 words
+[christian/Gregory VII] 1 works, 16,315 words
+[christian/Gregory IX] 1 works, 357,559 words
+[christian/Hugo of St. Victor] 2 works, 35,135 words
+[christian/Hydatius] 2 works, 12,924 words
+[christian/Hymni et cantica] 0 works, 0 words
+[christian/Iacobus de Voragine] 24 works, 23,115 words
+[christian/Innocent III] 2 works, 18,560 words
+    warning: empty page https://thelatinlibrary.com/isidore/19.shtml
+[christian/Isidore of Seville] 1 works, 203,077 words
+[christian/Jerome] 4 works, 23,079 words
+[christian/Junillus] 1 works, 10,453 words
+[christian/Lactantius] 2 works, 28,897 words
+[christian/Leo the Great] 2 works, 2,132 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Liber Pontificalis] 5 works, 30,761 words
+[christian/Macarius of Alexandria] 1 works, 1,450 words
+[christian/Macarius the Great] 1 works, 4,748 words
+[christian/Novatian] 1 works, 20,854 words
+[christian/Papal Bulls] 4 works, 7,781 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Passio Perpetuae] 1 works, 3,597 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Paulinus Nolensis] 1 works, 24,570 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Professio Contra Priscillianum] 1 works, 1,165 words
+[christian/Prosperus] 3 works, 21,365 words
+[christian/Prudentius] 15 works, 23,587 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Regula ad Monachos] 1 works, 5,692 words
+[christian/Sedulius] 2 works, 11,451 words
+[christian/Sulpicius Severus] 2 works, 32,296 words
+    warning: empty page https://thelatinlibrary.com/tertullian/tertullian.uxor.shtml
+    warning: empty page https://thelatinlibrary.com/tertullian/tertullian.cultu.shtml
+    warning: empty page https://thelatinlibrary.com/tertullian/tertullian.marcionem.shtml
+    warning: missing page https://thelatinlibrary.com/christian
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Tertullian] 2 works, 239,804 words
+[christian/Thomas à Kempis] 1 works, 42,429 words
+[christian/Thomas of Edessa] 1 works, 10,901 words
+[christian/Vincent of Lérins] 1 works, 16,725 words
+    warning: missing page https://thelatinlibrary.com/christian
+[christian/Vita Sancti Columbae] 1 works, 15,011 words
+[medieval/Abbo Floriacensis] 1 works, 4,621 words
+[medieval/Adso Dervensis] 1 works, 1,945 words
+[medieval/Aelredus Rievallensis] 1 works, 16,911 words
+[medieval/Alanus de Insulis] 2 works, 44,854 words
+[medieval/Albert of Aix] 1 works, 128,924 words
+[medieval/Albertano of Brescia] 7 works, 60,552 words
+[medieval/Alfonsi] 1 works, 14,792 words
+[medieval/Andrea da Bergamo] 1 works, 4,020 words
+[medieval/Andreas Capellanus] 2 works, 48,935 words
+[medieval/Annales Regni Francorum] 1 works, 21,711 words
+[medieval/Annales Vedastini] 1 works, 7,708 words
+[medieval/Annales Xantenses] 1 works, 6,924 words
+[medieval/Anonymus Neveleti] 1 works, 6,951 words
+[medieval/Archipoeta] 1 works, 4,335 words
+[medieval/Asserius] 1 works, 12,231 words
+[medieval/Baldo] 1 works, 9,028 words
+[medieval/Boethius de Dacia] 2 works, 9,915 words
+[medieval/Breve Chronicon Northmannicum] 1 works, 1,205 words
+[medieval/Carmina Burana] 1 works, 194 words
+[medieval/Carmen in Victoriam] 1 works, 1,900 words
+[medieval/Constitutum Constantini] 1 works, 2,738 words
+[medieval/Dante] 3 works, 41,747 words
+[medieval/De Expugnatione Terrae Sanctae per Saladinum] 1 works, 12,170 words
+[medieval/Declaratio Arbroathis] 1 works, 1,037 words
+[medieval/Disticha Catonis] 1 works, 2,237 words
+[medieval/Einhard] 1 works, 7,917 words
+[medieval/Epistolae Austrasicae] 1 works, 4,402 words
+[medieval/Erchempert] 1 works, 12,314 words
+[medieval/Fabe] 1 works, 4,249 words
+[medieval/Falcandus] 1 works, 34,958 words
+[medieval/Falcone di Benevento] 1 works, 35,444 words
+[medieval/Foedus Aeternum] 1 works, 471 words
+[medieval/Fredegarius] 1 works, 22,421 words
+[medieval/Frodebertus & Importunus] 1 works, 974 words
+[medieval/Gesta Francorum] 1 works, 20,136 words
+[medieval/Gesta Romanorum] 1 works, 15,947 words
+[medieval/Gioacchino da Fiore] 1 works, 21,059 words
+[medieval/Godfrey of Winchester] 2 works, 8,525 words
+[medieval/Gregorii Mirabilia Urbis Romae] 1 works, 4,509 words
+[medieval/Henry of Settimello] 1 works, 6,450 words
+[medieval/Henry VII] 3 works, 5,300 words
+[medieval/Historia Brittonum] 1 works, 9,834 words
+[medieval/Inquisitio] 1 works, 4,486 words
+[medieval/Johannes de Alta Silva] 1 works, 1,762 words
+[medieval/Johannes de Plano Carpini] 1 works, 12,248 words
+[medieval/John of Garland] 1 works, 3,166 words
+[medieval/Legenda Regis Stephani] 1 works, 3,252 words
+[medieval/Leo of Naples] 1 works, 17,836 words
+[medieval/Liber Kalilae et Dimnae] 1 works, 30,370 words
+[medieval/Lupus Protospatarius Barensis] 1 works, 4,378 words
+[medieval/Magna Carta] 1 works, 3,625 words
+[medieval/Maidstone] 1 works, 1,659 words
+[medieval/Malaterra] 1 works, 37,687 words
+[medieval/Marbodus Redonensis] 1 works, 1,655 words
+[medieval/Martin of Braga] 13 works, 26,882 words
+[medieval/Mirabilia Urbis Romae] 1 works, 4,628 words
+    warning: missing page https://thelatinlibrary.com/alba.html
+[medieval/Miscellanea Carminum] 40 works, 14,167 words
+[medieval/Nithardus] 1 works, 11,990 words
+[medieval/Oresmius] 1 works, 9,790 words
+[medieval/Origo gentis Langobardorum] 1 works, 992 words
+[medieval/Otto of Freising] 2 works, 82,330 words
+[medieval/Petrus Blesensis] 1 works, 7,549 words
+[medieval/Petrus de Ebulo] 1 works, 11,138 words
+[medieval/Planctus destructionis] 1 works, 429 words
+[medieval/Raoul of Caen] 1 works, 36,099 words
+[medieval/Ricardi de Bury] 1 works, 14,847 words
+[medieval/Richerus] 1 works, 49,706 words
+[medieval/Septem Sapientum] 1 works, 8,037 words
+[medieval/Sigebert of Gembloux] 0 works, 0 words
+[medieval/Stephanus de Varda] 1 works, 871 words
+[medieval/Theganus] 1 works, 6,481 words
+[medieval/Theodolus] 1 works, 2,239 words
+[medieval/Venantius Fortunatus] 1 works, 737 words
+[medieval/Vita Agnetis] 1 works, 10,347 words
+[medieval/Vita Caroli IV] 1 works, 15,149 words
+[medieval/Waltarius] 1 works, 9,356 words
+[medieval/Walter Mapps] 2 works, 3,328 words
+[medieval/Walter of Châtillon] 13 works, 8,599 words
+[medieval/William of Apulia] 1 works, 17,246 words
+[medieval/William of Conches] 2 works, 19,171 words
+[medieval/William of Tyre] 1 works, 255,040 words
+[neolatin/Addison] 9 works, 4,965 words
+    warning: missing page https://thelatinlibrary.com/bacon/bacon/bacon.sermones.shtml
+    warning: empty page https://thelatinlibrary.com/bacon/bacon.titlepage.shtml
+[neolatin/Bacon] 16 works, 126,276 words
+[neolatin/Balde] 2 works, 272 words
+[neolatin/Bigges] 1 works, 6,233 words
+[neolatin/Bebel] 1 works, 18,733 words
+[neolatin/Borbonii] 1 works, 2,644 words
+[neolatin/Boskovic] 1 works, 3,015 words
+[neolatin/Boym] 1 works, 3,233 words
+[neolatin/Buchanan] 1 works, 5,149 words
+[neolatin/Bultelius] 2 works, 4,909 words
+[neolatin/Campion] 8 works, 34,615 words
+[neolatin/Columbus] 1 works, 2,201 words
+[neolatin/Conradus Celtis] 2 works, 2,881 words
+[neolatin/Contemporary] 5 works, 56,385 words
+[neolatin/Cotta] 1 works, 1,921 words
+[neolatin/Descartes] 9 works, 19,333 words
+[neolatin/Epistulae de Priapismo] 1 works, 2,647 words
+[neolatin/Erasmus] 7 works, 122,043 words
+[neolatin/Fletcher] 1 works, 5,512 words
+[neolatin/Forsett] 2 works, 8,312 words
+[neolatin/Galileo] 1 works, 10,028 words
+[neolatin/Garcilaso de la Vega] 1 works, 966 words
+[neolatin/Gaudeamus Igitur] 1 works, 111 words
+[neolatin/Gauss] 1 works, 9,548 words
+[neolatin/Gwinne] 8 works, 34,826 words
+[neolatin/Halley] 1 works, 290 words
+[neolatin/Holberg] 1 works, 28,802 words
+[neolatin/Janus Secundus] 2 works, 6,493 words
+[neolatin/Kepler] 1 works, 6,274 words
+[neolatin/Landor] 4 works, 4,897 words
+[neolatin/Laurentius Corvinus] 2 works, 1,022 words
+[neolatin/Lhomond] 2 works, 33,486 words
+[neolatin/Lotichius] 1 works, 137 words
+[neolatin/Luther] 2 works, 4,107 words
+[neolatin/Marullo] 1 works, 361 words
+[neolatin/Marx] 1 works, 813 words
+[neolatin/May] 1 works, 16,460 words
+[neolatin/Melanchthon] 4 works, 22,005 words
+[neolatin/Milton] 1 works, 1,465 words
+[neolatin/Mirandola] 6 works, 10,698 words
+[neolatin/Montanus] 1 works, 795 words
+[neolatin/More] 1 works, 27,199 words
+[neolatin/Navagero] 1 works, 6,841 words
+[neolatin/Newton] 4 works, 1,895 words
+[neolatin/Owen] 1 works, 460 words
+[neolatin/Pascoli] 1 works, 3,539 words
+[neolatin/Passerat] 1 works, 465 words
+[neolatin/Patricius] 1 works, 5,084 words
+[neolatin/Petrarch] 4 works, 25,641 words
+[neolatin/Piccolomini] 3 works, 13,709 words
+[neolatin/Pontano] 1 works, 903 words
+[neolatin/Poggio Bracciolini] 1 works, 14,091 words
+[neolatin/Poree] 1 works, 8,137 words
+[neolatin/Pseudoplatonica] 12 works, 22,166 words
+[neolatin/Ritchie's Fabulae Faciles] 0 works, 0 words
+[neolatin/Rimbaud] 1 works, 417 words
+[neolatin/Ruaeus' Aeneid] 1 works, 2,416 words
+[neolatin/Sannazaro] 2 works, 9,927 words
+[neolatin/Scaliger] 0 works, 0 words
+[neolatin/Spinoza] 1 works, 66,607 words
+[neolatin/Theophanes] 1 works, 275 words
+[neolatin/Tünger] 1 works, 12,849 words
+[neolatin/Vallauri] 1 works, 6 words
+[neolatin/Vegius] 1 works, 4,135 words
+[neolatin/Vico] 1 works, 3,058 words
+[neolatin/Vida] 1 works, 4,268 words
+[neolatin/Waardenburg] 1 works, 520 words
+    warning: missing page https://thelatinlibrary.com/withof1.html
+    warning: missing page https://thelatinlibrary.com/withof2.html
+    warning: missing page https://thelatinlibrary.com/withof3.html
+    warning: missing page https://thelatinlibrary.com/withof4.html
+    warning: missing page https://thelatinlibrary.com/withof5.html
+    warning: missing page https://thelatinlibrary.com/withof6.html
+[neolatin/Johann H. Withof] 1 works, 4,128 words
+[neolatin/Johann P. L. Withof] 0 works, 0 words
+[neolatin/Xylander] 1 works, 14,769 words
+[misc/Anonymus Valesianus] 1 works, 4,532 words
+[misc/Ampelius] 1 works, 7,453 words
+[misc/Apicius] 5 works, 7,787 words
+    warning: missing page http://thelatinlibrary.com/index
+    warning: missing page http://thelatinlibrary.com/classics
+[misc/Appendix Vergiliana] 1 works, 16,085 words
+[misc/Asconius] 1 works, 16,663 words
+[misc/Ausonius] 2 works, 3,271 words
+[misc/Avianus] 1 works, 4,280 words
+[misc/Avienus] 2 works, 12,669 words
+[misc/Balbus] 1 works, 2,196 words
+[misc/Caecilius Balbus] 1 works, 6,450 words
+[misc/Calpurnius Flaccus] 1 works, 6,986 words
+[misc/Calpurnius Siculus] 1 works, 5,067 words
+[misc/Carmen Arvale] 0 works, 0 words
+[misc/Carmen Saliare] 0 works, 0 words
+[misc/Censorinus] 1 works, 10,299 words
+[misc/Cinna Helvius] 1 works, 113 words
+[misc/Claudii Oratio] 1 works, 801 words
+[misc/Columella] 2 works, 114,508 words
+[misc/Dares the Phrygian] 1 works, 7,797 words
+[misc/de Ave Phoenice] 1 works, 1,071 words
+    warning: missing page http://thelatinlibrary.com/index
+    warning: missing page http://thelatinlibrary.com/classics
+[misc/Donatus] 1 works, 4,189 words
+[misc/Exurperantius] 1 works, 1,406 words
+[misc/Festus] 1 works, 3,879 words
+    warning: missing page https://thelatinlibrary.com/de_eloqu
+[misc/Fronto] 1 works, 68,064 words
+[misc/Fulgentius] 3 works, 19,239 words
+[misc/Germanicus] 1 works, 4,649 words
+[misc/Grattius] 1 works, 3,547 words
+[misc/Gregory of Tours] 1 works, 121,777 words
+[misc/Historia Apolloni] 1 works, 11,810 words
+[misc/Hyginus] 3 works, 35,736 words
+[misc/Ilias Latina] 1 works, 6,630 words
+[misc/Iordanes] 2 works, 38,829 words
+[misc/Iulius Obsequens] 1 works, 5,626 words
+[misc/Iulius Paris] 1 works, 674 words
+[misc/Livius Andronicus] 1 works, 364 words
+[misc/Manilius] 1 works, 27,529 words
+[misc/Marcellinus Comes] 1 works, 20,902 words
+[misc/Maximianus] 1 works, 4,222 words
+[misc/Minucius Felix] 1 works, 11,188 words
+[misc/Naevius] 1 works, 911 words
+[misc/Nemesianus] 4 works, 2,143 words
+[misc/Notitia Dignitatum] 2 works, 9,751 words
+[misc/Orosius] 1 works, 74,897 words
+[misc/Paulus Diaconus] 3 works, 72,670 words
+[misc/Pervigilium Veneris] 1 works, 642 words
+[misc/Pomponius Mela] 1 works, 16,485 words
+[misc/Porphyrius] 1 works, 5,051 words
+[misc/Precatio Terrae] 1 works, 209 words
+[misc/Priapea] 1 works, 3,428 words
+[misc/Publilius Syrus] 1 works, 8,248 words
+[misc/Reposianus] 1 works, 1,221 words
+[misc/Roman Epitaphs] 1 works, 1,666 words
+    warning: missing page https://thelatinlibrary.com/misc
+[misc/Roman Inscriptions] 1 works, 886 words
+[misc/Rutilius Namatianus] 1 works, 3,977 words
+[misc/Rutilius Lupus] 1 works, 4,395 words
+[misc/Sabinus] 3 works, 2,142 words
+[misc/Sidonius Apollinaris] 2 works, 72,249 words
+[misc/Solinus] 9 works, 100,571 words
+[misc/Testamentum Porcelli] 1 works, 302 words
+[misc/Vegetius] 1 works, 24,875 words
+[misc/Zonaras] 1 works, 10,345 words
+
+register                      works       words         chars
+-------------------------------------------------------------
+classical                       324   4,798,902    33,288,820
+christian                       130   2,381,677    16,621,522
+medieval                        160   1,431,767    10,308,014
+neolatin                        161     878,368     6,130,214
+misc                             88   1,035,352     7,249,799
+-------------------------------------------------------------
+TOTAL                           863  10,526,066    73,598,369
+
+top 15 of 309 authors         works       words         chars
+-------------------------------------------------------------
+Cicero                           58   1,000,482     6,755,803
+Augustine                         3     623,405     4,182,358
+Livy                              2     524,152     3,716,821
+Gregory IX                        1     357,559     2,655,789
+Seneca Minor                     24     325,820     2,203,408
+William of Tyre                   1     255,040     1,909,482
+Tertullian                        2     239,804     1,648,499
+Quintilian                        2     225,895     1,561,318
+Ovid                              9     219,441     1,466,395
+Isidore of Seville                1     203,077     1,415,373
+Plautus                          21     182,589     1,139,006
+Tacitus                           5     162,002     1,207,195
+Albert of Aix                     1     128,924       937,262
+Cassiodorus                       5     128,280       961,915
+Bacon                            16     126,276       892,561
+-------------------------------------------------------------
+TOTAL                           151   4,702,746    32,653,185
+
+wrote 863 works to data\corpus\works.jsonl (144 pages fetched, 1960 cache hits)

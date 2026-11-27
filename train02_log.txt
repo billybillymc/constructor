@@ -1,0 +1,97 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 53,164,544
+training for 8000 steps (16,384 tokens/step) -> runs\02_modern_arch\full_corpus_v1
+step    500 | train 5.8956 | val 5.8591 | lr 4.99e-04 | 375s
+step   1000 | train 5.2678 | val 5.3666 | lr 4.91e-04 | 759s
+step   1500 | train 4.9508 | val 5.1817 | lr 4.74e-04 | 1,143s
+step   2000 | train 4.7901 | val 5.0788 | lr 4.48e-04 | 1,528s
+step   2500 | train 4.5807 | val 5.0035 | lr 4.15e-04 | 1,912s
+step   3000 | train 4.4937 | val 4.9663 | lr 3.77e-04 | 2,295s
+step   3500 | train 4.3927 | val 4.8946 | lr 3.34e-04 | 2,680s
+step   4000 | train 4.2813 | val 4.8845 | lr 2.89e-04 | 3,064s
+step   4500 | train 4.1642 | val 4.8631 | lr 2.43e-04 | 3,447s
+step   5000 | train 4.0641 | val 4.8710 | lr 1.99e-04 | 3,831s
+step   5500 | train 3.9993 | val 4.8574 | lr 1.57e-04 | 4,214s
+step   6000 | train 3.9296 | val 4.8159 | lr 1.21e-04 | 4,597s
+step   6500 | train 3.8910 | val 4.8445 | lr 9.09e-05 | 4,981s
+step   7000 | train 3.8227 | val 4.8352 | lr 6.85e-05 | 5,363s
+step   7500 | train 3.8284 | val 4.8070 | lr 5.47e-05 | 5,745s
+step   8000 | train 3.7755 | val 4.8314 | lr 5.00e-05 | 6,128s
+
+=== final report ===
+best checkpoint: step 7500
+val  loss 4.8438 | perplexity   126.94
+test loss 4.9565 | perplexity   142.10
+loss curve: runs\02_modern_arch\full_corpus_v1\loss_curve.png
+
+=== samples ===
+--- sample 1 ---
+
+----
+Scire quis nescit? an non sibi, cur mentiri se putat? aut cur unquam stultus est? Melius est; et quam
+cupidus est. Non itaque, cum in hac causa peccaverit, aderit cum peccaverit.
+Vis scire, quod non licet? Certe si non perdis, ut hoc tibi te ostendas, scio,
+quia si ipse es, non possum; sed si non potes, cum peccaris.
+
+Stultitia
+
+Stultitia est, in qua peccatur, et non peccetur. Dico
+enim, nec in hoc, quia non potes. Noli peccare, et non puniris. Noli
+diabolus; non morieris, sed moriaris. Quod si peccaveris,
+
+dominus in hoc
+carnis,
+
+si peccasses,
+
+tu non peccasses:
+
+ego in hoc,
+
+id est,
+
+u
+--- sample 2 ---
+
+----
+SCENA I. INCENO ITURINA DOPHYCERE INCEMSVES, INDOTE FIDENDO, QUAM DIUA VIE FIFIGIET, QUI MODUERTUR.
+
+Quidam, natione Grecus, ex patre Abraham, genitus ex filio Abraham, ex semine Abrahae, ex Adam, natus est ex Abraham. Cuius pater erat semen, ex Isaac natus est Ioseph, ex Adam autem Abraham ex Abraham fuit, ex patre Iacob. Erat autem Cainan, ex Abraham autem homo natum est. Quod autem Abraham non est, genuit Ismahel, sed ex Abraham genuit filium. Misit autem et filium, qui genuit Abraham.
+
+SEQUERA HOSTHOESINUM GOGNOUS
+
+Aean, qui genuit Abram, genuit Enosan et filiam eius. Hanc porro genu
+--- sample 3 ---
+
+----
+Sine Ferentino S. Nuper A. S. F. M. Abs te mihi gratias
+videtur fecisse. Amplus et rugiens,
+quia te in sinum vertisse ad te hodie,
+fepos, hariolos, lepores,
+ut te oblectarem,
+et me et tuos sodales.
+
+Nam mi in mari, in mari,
+ubi non es in mari,
+ad te perago;
+nam ubi es? ubi es? ubi es? unde es
+nisi in fundo,
+qui non es in mari?
+
+Navem ego te amo quam te.
+
+Versus sum ad me tibi,
+et tibi reddidi, quod tu solus non es.
+
+Vxor subripe eum in exilium
+in carcerem tibi
+qui non ero.
+
+Nocte hac, pater, quid te fugis?
+
+Quid tibi, pater?
+
+Convertebas in gratiam tibi,
+et eris, pater, in sinum.
+
+Malae 

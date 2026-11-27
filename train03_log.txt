@@ -1,0 +1,133 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 53,164,544
+training for 8000 steps (16,384 tokens/step) -> runs\03_muon\full_corpus_v1
+step    500 | train 5.7572 | val 5.7250 | lr x0.999 | 397s
+step   1000 | train 5.1013 | val 5.2282 | lr x0.982 | 800s
+step   1500 | train 4.8118 | val 5.0623 | lr x0.947 | 1,204s
+step   2000 | train 4.6737 | val 4.9734 | lr x0.896 | 1,605s
+step   2500 | train 4.4820 | val 4.9039 | lr x0.831 | 2,005s
+step   3000 | train 4.4114 | val 4.8799 | lr x0.754 | 2,406s
+step   3500 | train 4.3206 | val 4.8021 | lr x0.668 | 2,807s
+step   4000 | train 4.2118 | val 4.7952 | lr x0.578 | 3,208s
+step   4500 | train 4.0978 | val 4.7774 | lr x0.486 | 3,609s
+step   5000 | train 3.9983 | val 4.7774 | lr x0.397 | 4,011s
+step   5500 | train 3.9223 | val 4.7765 | lr x0.315 | 4,413s
+step   6000 | train 3.8392 | val 4.7351 | lr x0.242 | 4,814s
+step   6500 | train 3.7904 | val 4.7641 | lr x0.182 | 5,214s
+step   7000 | train 3.7121 | val 4.7597 | lr x0.137 | 5,614s
+step   7500 | train 3.7051 | val 4.7338 | lr x0.109 | 6,016s
+step   8000 | train 3.6416 | val 4.7654 | lr x0.100 | 6,417s
+
+=== final report ===
+best checkpoint: step 7500
+val  loss 4.7711 | perplexity   118.04
+test loss 4.8944 | perplexity   133.55
+loss curve: runs\03_muon\full_corpus_v1\loss_curve.png
+
+=== samples ===
+--- sample 1 ---
+
+----
+Scire decet si quis te mihi conciliat amicum
+&nbsp Non aliter quam si te sit mihi magna voluntas.
+
+Menalcas
+
+Precor, ut hoc in me sit, non ut hoc in me proberis.
+
+Menalcas
+
+Infandum est quod te doceo, quod te non oderis.
+
+Menalcas
+
+Miror: non faciam. Nullum hic quicquam desidero.
+
+Menalcas
+
+Si dederis aliquid, hoc mihi dulce erit.
+
+Menalcas
+
+Quid si me non ira, Nursia, non amor,
+Quid si me timeat, ut tibi sim potens?
+
+Menalcas
+
+Nescio quam aulam, mea lux mea,
+Patrimonia mea, ne nimis,
+Menalca, nam tu mihi
+Deum, mea cura,
+seruula, ne mihi
+Servosa sit tua.
+
+Sordida
+
+Tu
+tua
+tua causa de
+lin
+--- sample 2 ---
+
+----
+SCENA I.
+TIGO. Melius quam tu, mea vita, potes me videre.
+PATRICIUS.
+Malo, sed, Philota, tu sis, qui amare, an amare, an amari
+Deo?
+TIG. Quaeso, inquam, mea fides.
+TIG. Dura.
+TIG. Quid opust tibi?
+TIG. Dixi, scio in te quasi in tuo te animo.
+TIG. Spero.
+TIG. Non vis ergo, sed quid vis, quod iubes.
+TIG. Audio.
+TIG. Quia taceo.
+TIG. Dico tibi, ut taceas.
+TIG. Tua vera tu quidem.
+TIG. Non taces?
+TIG. Adsunt.
+TIG. Cave sis velis.
+TIG. Certe.
+
+UMB. Tun me taces?
+TIG. Quia taceo tibi.
+TIG. Heus, ego dic taces.
+TIG. Cede tu taces.
+TIG. Quid est tui?
+TIG. Quia taceo.
+TIG. Heu, te
+--- sample 3 ---
+
+----
+SERENAE M-
+Lustrum
+
+SERENIS AVGNUPT
+
+M. Liuium Lautum
+
+P. M. Liuium Lautum
+
+Progenies quot et quantos Lautemat fratres
+Patriciorum hominum, qui cum domino
+Patricum in regnum depravaverunt,
+Qui cum duobus filiis suo regno in perpetuum,
+Alex parentum in regnum suum,
+Tranquillaverunt patri suo per gratiam,
+Scire voluerunt ut patruo suo
+Protulerit sibi uxores.
+
+Urbs Pliniadenz et Guorthigirni
+
+Liber Peregrinus
+
+Puella Ratisponensis,
+Ecquemiscardo Liuio,
+Frater, ut supra dictum est,
+Judicum, vel praetiorum
+Gustodem, vel affinium
+Latinorum.
+
+Olim in regno Liuio,
+Quorum pater erat, cum patri su

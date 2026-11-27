@@ -1,0 +1,9 @@
+# Environments & caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Large local artifacts (not tracked in git)
+data/
+runs/
