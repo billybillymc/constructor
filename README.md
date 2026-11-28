@@ -17,6 +17,14 @@ experiments/
   03_muon/                same arch as 02, Muon optimizer
   04_chat_sft/            chat SFT of the 03 checkpoint on a built Latin
                           dialogue dataset (masked loss, chat template)
+  05_fact_mix/            03's exact recipe with the chat/fact data mixed
+                          into pretraining (~5%) — when does knowledge enter?
+  06_scaled/              03's recipe at ~110M params and 2x steps
+  07_chat_sft_scaled/     04's exact SFT recipe on the 06 base — does a
+                          stronger base make a better chat model?
+evals/minimal_pairs.py    BLiMP-style minimal-pairs suite: grammar categories
+                          generated from paradigms + entity-binding facts;
+                          scores every checkpoint, writes evals/results.json
 src/loquor/               CLI to prompt any trained checkpoint; speaks the
                           chat template to chat checkpoints (--fewshot wraps
                           base models in a Q/A transcript)

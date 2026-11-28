@@ -1,0 +1,36 @@
+# 07_chat_sft_scaled: 04's exact SFT recipe applied to the 06_scaled (110M)
+# base model instead of 03_muon (53M). train.py is a byte-identical copy of
+# 04's; model.py is a byte-identical copy of 06's. Only this config changes:
+# the model section matches 06 and init_from points at its best checkpoint.
+# Smaller per-device batch (8 x 2 accumulation) keeps 04's effective batch
+# within 6 GB VRAM at 110M params under full AdamW.
+
+[model]
+n_layer = 20
+n_head = 10
+n_embd = 640
+block_size = 512
+dropout = 0.1
+mlp_hidden = 1760
+rope_theta = 10000.0
+
+[train]
+seed = 1457
+data_dir = "data/processed/chat"
+out_dir = "runs"
+init_from = "runs/06_scaled/scaled_v1/ckpt_best.pt"
+batch_size = 8
+grad_accum_steps = 2
+max_steps = 400
+lr = 1e-4
+min_lr_frac = 0.1
+warmup_steps = 20
+beta1 = 0.9
+beta2 = 0.95
+weight_decay = 0.0
+grad_clip = 1.0
+eval_interval = 25
+eval_batches = 20
+sample_tokens = 90
+sample_temperature = 0.7
+sample_top_k = 50

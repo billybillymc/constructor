@@ -1,0 +1,93 @@
+[
+ {
+  "checkpoint": "runs\\01_gpt2_baseline\\full_corpus_v1\\ckpt_best.pt",
+  "experiment": "01_gpt2_baseline",
+  "accuracy": {
+   "sv_number": 0.6166666666666667,
+   "sv_person": 0.6875,
+   "adj_gender": 0.7222222222222222,
+   "prep_case": 0.8333333333333334,
+   "obj_case": 0.7,
+   "facts": 0.5833333333333334,
+   "overall": 0.6827956989247311
+  }
+ },
+ {
+  "checkpoint": "runs\\02_modern_arch\\full_corpus_v1\\ckpt_best.pt",
+  "experiment": "02_modern_arch",
+  "accuracy": {
+   "sv_number": 0.7,
+   "sv_person": 0.5625,
+   "adj_gender": 0.7777777777777778,
+   "prep_case": 0.9,
+   "obj_case": 0.6,
+   "facts": 0.625,
+   "overall": 0.7150537634408602
+  }
+ },
+ {
+  "checkpoint": "runs\\03_muon\\full_corpus_v1\\ckpt_best.pt",
+  "experiment": "03_muon",
+  "accuracy": {
+   "sv_number": 0.7333333333333333,
+   "sv_person": 0.625,
+   "adj_gender": 0.7222222222222222,
+   "prep_case": 0.7333333333333333,
+   "obj_case": 0.6,
+   "facts": 0.6666666666666666,
+   "overall": 0.6989247311827957
+  }
+ },
+ {
+  "checkpoint": "runs\\04_chat_sft\\sft_v4\\ckpt_best.pt",
+  "experiment": "04_chat_sft",
+  "accuracy": {
+   "sv_number": 0.7666666666666667,
+   "sv_person": 0.6875,
+   "adj_gender": 0.75,
+   "prep_case": 0.7333333333333333,
+   "obj_case": 0.75,
+   "facts": 0.6666666666666666,
+   "overall": 0.7365591397849462
+  }
+ },
+ {
+  "checkpoint": "runs\\05_fact_mix\\mix_v1\\ckpt_best.pt",
+  "experiment": "05_fact_mix",
+  "accuracy": {
+   "sv_number": 0.6166666666666667,
+   "sv_person": 0.75,
+   "adj_gender": 0.7222222222222222,
+   "prep_case": 0.9666666666666667,
+   "obj_case": 0.45,
+   "facts": 0.625,
+   "overall": 0.6881720430107527
+  }
+ },
+ {
+  "checkpoint": "runs\\06_scaled\\scaled_v1\\ckpt_best.pt",
+  "experiment": "06_scaled",
+  "accuracy": {
+   "sv_number": 0.7666666666666667,
+   "sv_person": 0.9375,
+   "adj_gender": 0.8333333333333334,
+   "prep_case": 0.9666666666666667,
+   "obj_case": 0.5,
+   "facts": 0.5833333333333334,
+   "overall": 0.7741935483870968
+  }
+ },
+ {
+  "checkpoint": "runs\\07_chat_sft_scaled\\sft_v1\\ckpt_best.pt",
+  "experiment": "07_chat_sft_scaled",
+  "accuracy": {
+   "sv_number": 0.7833333333333333,
+   "sv_person": 0.8125,
+   "adj_gender": 0.8055555555555556,
+   "prep_case": 1.0,
+   "obj_case": 0.8,
+   "facts": 0.6666666666666666,
+   "overall": 0.8118279569892473
+  }
+ }
+]

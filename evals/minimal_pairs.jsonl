@@ -1,0 +1,186 @@
+{"category": "sv_number", "good": "Puella cantat.", "bad": "Puella cantant."}
+{"category": "sv_number", "good": "Puellae cantant.", "bad": "Puellae cantat."}
+{"category": "sv_number", "good": "Puella dormit.", "bad": "Puella dormiunt."}
+{"category": "sv_number", "good": "Puellae dormiunt.", "bad": "Puellae dormit."}
+{"category": "sv_number", "good": "Puella sedet.", "bad": "Puella sedent."}
+{"category": "sv_number", "good": "Puellae sedent.", "bad": "Puellae sedet."}
+{"category": "sv_number", "good": "Regina laborat.", "bad": "Regina laborant."}
+{"category": "sv_number", "good": "Reginae laborant.", "bad": "Reginae laborat."}
+{"category": "sv_number", "good": "Regina currit.", "bad": "Regina currunt."}
+{"category": "sv_number", "good": "Reginae currunt.", "bad": "Reginae currit."}
+{"category": "sv_number", "good": "Regina ridet.", "bad": "Regina rident."}
+{"category": "sv_number", "good": "Reginae rident.", "bad": "Reginae ridet."}
+{"category": "sv_number", "good": "Dominus ambulat.", "bad": "Dominus ambulant."}
+{"category": "sv_number", "good": "Domini ambulant.", "bad": "Domini ambulat."}
+{"category": "sv_number", "good": "Dominus venit.", "bad": "Dominus veniunt."}
+{"category": "sv_number", "good": "Domini veniunt.", "bad": "Domini venit."}
+{"category": "sv_number", "good": "Dominus scribit.", "bad": "Dominus scribunt."}
+{"category": "sv_number", "good": "Domini scribunt.", "bad": "Domini scribit."}
+{"category": "sv_number", "good": "Servus dormit.", "bad": "Servus dormiunt."}
+{"category": "sv_number", "good": "Servi dormiunt.", "bad": "Servi dormit."}
+{"category": "sv_number", "good": "Servus sedet.", "bad": "Servus sedent."}
+{"category": "sv_number", "good": "Servi sedent.", "bad": "Servi sedet."}
+{"category": "sv_number", "good": "Servus legit.", "bad": "Servus legunt."}
+{"category": "sv_number", "good": "Servi legunt.", "bad": "Servi legit."}
+{"category": "sv_number", "good": "Puer currit.", "bad": "Puer currunt."}
+{"category": "sv_number", "good": "Pueri currunt.", "bad": "Pueri currit."}
+{"category": "sv_number", "good": "Puer ridet.", "bad": "Puer rident."}
+{"category": "sv_number", "good": "Pueri rident.", "bad": "Pueri ridet."}
+{"category": "sv_number", "good": "Puer cantat.", "bad": "Puer cantant."}
+{"category": "sv_number", "good": "Pueri cantant.", "bad": "Pueri cantat."}
+{"category": "sv_number", "good": "Rex venit.", "bad": "Rex veniunt."}
+{"category": "sv_number", "good": "Reges veniunt.", "bad": "Reges venit."}
+{"category": "sv_number", "good": "Rex scribit.", "bad": "Rex scribunt."}
+{"category": "sv_number", "good": "Reges scribunt.", "bad": "Reges scribit."}
+{"category": "sv_number", "good": "Rex laborat.", "bad": "Rex laborant."}
+{"category": "sv_number", "good": "Reges laborant.", "bad": "Reges laborat."}
+{"category": "sv_number", "good": "Miles sedet.", "bad": "Miles sedent."}
+{"category": "sv_number", "good": "Milites sedent.", "bad": "Milites sedet."}
+{"category": "sv_number", "good": "Miles legit.", "bad": "Miles legunt."}
+{"category": "sv_number", "good": "Milites legunt.", "bad": "Milites legit."}
+{"category": "sv_number", "good": "Miles ambulat.", "bad": "Miles ambulant."}
+{"category": "sv_number", "good": "Milites ambulant.", "bad": "Milites ambulat."}
+{"category": "sv_number", "good": "Magister ridet.", "bad": "Magister rident."}
+{"category": "sv_number", "good": "Magistri rident.", "bad": "Magistri ridet."}
+{"category": "sv_number", "good": "Magister cantat.", "bad": "Magister cantant."}
+{"category": "sv_number", "good": "Magistri cantant.", "bad": "Magistri cantat."}
+{"category": "sv_number", "good": "Magister dormit.", "bad": "Magister dormiunt."}
+{"category": "sv_number", "good": "Magistri dormiunt.", "bad": "Magistri dormit."}
+{"category": "sv_number", "good": "Nauta scribit.", "bad": "Nauta scribunt."}
+{"category": "sv_number", "good": "Nautae scribunt.", "bad": "Nautae scribit."}
+{"category": "sv_number", "good": "Nauta laborat.", "bad": "Nauta laborant."}
+{"category": "sv_number", "good": "Nautae laborant.", "bad": "Nautae laborat."}
+{"category": "sv_number", "good": "Nauta currit.", "bad": "Nauta currunt."}
+{"category": "sv_number", "good": "Nautae currunt.", "bad": "Nautae currit."}
+{"category": "sv_number", "good": "Agricola legit.", "bad": "Agricola legunt."}
+{"category": "sv_number", "good": "Agricolae legunt.", "bad": "Agricolae legit."}
+{"category": "sv_number", "good": "Agricola ambulat.", "bad": "Agricola ambulant."}
+{"category": "sv_number", "good": "Agricolae ambulant.", "bad": "Agricolae ambulat."}
+{"category": "sv_number", "good": "Agricola venit.", "bad": "Agricola veniunt."}
+{"category": "sv_number", "good": "Agricolae veniunt.", "bad": "Agricolae venit."}
+{"category": "sv_person", "good": "Ego canto.", "bad": "Ego cantat."}
+{"category": "sv_person", "good": "Tu cantas.", "bad": "Tu canto."}
+{"category": "sv_person", "good": "Nos cantamus.", "bad": "Nos cantant."}
+{"category": "sv_person", "good": "Vos cantatis.", "bad": "Vos cantat."}
+{"category": "sv_person", "good": "Ego laboro.", "bad": "Ego laborat."}
+{"category": "sv_person", "good": "Tu laboras.", "bad": "Tu laboro."}
+{"category": "sv_person", "good": "Nos laboramus.", "bad": "Nos laborant."}
+{"category": "sv_person", "good": "Vos laboratis.", "bad": "Vos laborat."}
+{"category": "sv_person", "good": "Ego dormio.", "bad": "Ego dormit."}
+{"category": "sv_person", "good": "Tu dormis.", "bad": "Tu dormio."}
+{"category": "sv_person", "good": "Nos dormimus.", "bad": "Nos dormiunt."}
+{"category": "sv_person", "good": "Vos dormitis.", "bad": "Vos dormit."}
+{"category": "sv_person", "good": "Ego venio.", "bad": "Ego venit."}
+{"category": "sv_person", "good": "Tu venis.", "bad": "Tu venio."}
+{"category": "sv_person", "good": "Nos venimus.", "bad": "Nos veniunt."}
+{"category": "sv_person", "good": "Vos venitis.", "bad": "Vos venit."}
+{"category": "adj_gender", "good": "Dominus bonus est.", "bad": "Dominus bona est."}
+{"category": "adj_gender", "good": "Dominus magnus est.", "bad": "Dominus magna est."}
+{"category": "adj_gender", "good": "Dominus parvus est.", "bad": "Dominus parva est."}
+{"category": "adj_gender", "good": "Servus magnus est.", "bad": "Servus magna est."}
+{"category": "adj_gender", "good": "Servus parvus est.", "bad": "Servus parva est."}
+{"category": "adj_gender", "good": "Servus novus est.", "bad": "Servus nova est."}
+{"category": "adj_gender", "good": "Puer parvus est.", "bad": "Puer parva est."}
+{"category": "adj_gender", "good": "Puer novus est.", "bad": "Puer nova est."}
+{"category": "adj_gender", "good": "Puer bonus est.", "bad": "Puer bona est."}
+{"category": "adj_gender", "good": "Nauta novus est.", "bad": "Nauta nova est."}
+{"category": "adj_gender", "good": "Nauta bonus est.", "bad": "Nauta bona est."}
+{"category": "adj_gender", "good": "Nauta magnus est.", "bad": "Nauta magna est."}
+{"category": "adj_gender", "good": "Puella bona est.", "bad": "Puella bonum est."}
+{"category": "adj_gender", "good": "Puella magna est.", "bad": "Puella magnum est."}
+{"category": "adj_gender", "good": "Puella parva est.", "bad": "Puella parvum est."}
+{"category": "adj_gender", "good": "Regina magna est.", "bad": "Regina magnum est."}
+{"category": "adj_gender", "good": "Regina parva est.", "bad": "Regina parvum est."}
+{"category": "adj_gender", "good": "Regina nova est.", "bad": "Regina novum est."}
+{"category": "adj_gender", "good": "Rosa parva est.", "bad": "Rosa parvum est."}
+{"category": "adj_gender", "good": "Rosa nova est.", "bad": "Rosa novum est."}
+{"category": "adj_gender", "good": "Rosa bona est.", "bad": "Rosa bonum est."}
+{"category": "adj_gender", "good": "Via nova est.", "bad": "Via novum est."}
+{"category": "adj_gender", "good": "Via bona est.", "bad": "Via bonum est."}
+{"category": "adj_gender", "good": "Via magna est.", "bad": "Via magnum est."}
+{"category": "adj_gender", "good": "Bellum bonum est.", "bad": "Bellum bonus est."}
+{"category": "adj_gender", "good": "Bellum magnum est.", "bad": "Bellum magnus est."}
+{"category": "adj_gender", "good": "Bellum parvum est.", "bad": "Bellum parvus est."}
+{"category": "adj_gender", "good": "Donum magnum est.", "bad": "Donum magnus est."}
+{"category": "adj_gender", "good": "Donum parvum est.", "bad": "Donum parvus est."}
+{"category": "adj_gender", "good": "Donum novum est.", "bad": "Donum novus est."}
+{"category": "adj_gender", "good": "Templum parvum est.", "bad": "Templum parvus est."}
+{"category": "adj_gender", "good": "Templum novum est.", "bad": "Templum novus est."}
+{"category": "adj_gender", "good": "Templum bonum est.", "bad": "Templum bonus est."}
+{"category": "adj_gender", "good": "Verbum novum est.", "bad": "Verbum novus est."}
+{"category": "adj_gender", "good": "Verbum bonum est.", "bad": "Verbum bonus est."}
+{"category": "adj_gender", "good": "Verbum magnum est.", "bad": "Verbum magnus est."}
+{"category": "prep_case", "good": "Cum amico ambulat.", "bad": "Cum amicum ambulat."}
+{"category": "prep_case", "good": "Cum puella ambulat.", "bad": "Cum puellam ambulat."}
+{"category": "prep_case", "good": "Cum servo ambulat.", "bad": "Cum servum ambulat."}
+{"category": "prep_case", "good": "Cum rege ambulat.", "bad": "Cum regem ambulat."}
+{"category": "prep_case", "good": "Cum milite ambulat.", "bad": "Cum militem ambulat."}
+{"category": "prep_case", "good": "Sine amico ambulat.", "bad": "Sine amicum ambulat."}
+{"category": "prep_case", "good": "Sine puella ambulat.", "bad": "Sine puellam ambulat."}
+{"category": "prep_case", "good": "Sine servo ambulat.", "bad": "Sine servum ambulat."}
+{"category": "prep_case", "good": "Sine rege ambulat.", "bad": "Sine regem ambulat."}
+{"category": "prep_case", "good": "Sine milite ambulat.", "bad": "Sine militem ambulat."}
+{"category": "prep_case", "good": "De amico ambulat.", "bad": "De amicum ambulat."}
+{"category": "prep_case", "good": "De puella ambulat.", "bad": "De puellam ambulat."}
+{"category": "prep_case", "good": "De servo ambulat.", "bad": "De servum ambulat."}
+{"category": "prep_case", "good": "De rege ambulat.", "bad": "De regem ambulat."}
+{"category": "prep_case", "good": "De milite ambulat.", "bad": "De militem ambulat."}
+{"category": "prep_case", "good": "Ad urbem venit.", "bad": "Ad urbe venit."}
+{"category": "prep_case", "good": "Ad villam venit.", "bad": "Ad villa venit."}
+{"category": "prep_case", "good": "Ad montem venit.", "bad": "Ad monte venit."}
+{"category": "prep_case", "good": "Ad regem venit.", "bad": "Ad rege venit."}
+{"category": "prep_case", "good": "Ad amicum venit.", "bad": "Ad amico venit."}
+{"category": "prep_case", "good": "Per urbem venit.", "bad": "Per urbe venit."}
+{"category": "prep_case", "good": "Per villam venit.", "bad": "Per villa venit."}
+{"category": "prep_case", "good": "Per montem venit.", "bad": "Per monte venit."}
+{"category": "prep_case", "good": "Per regem venit.", "bad": "Per rege venit."}
+{"category": "prep_case", "good": "Per amicum venit.", "bad": "Per amico venit."}
+{"category": "prep_case", "good": "Ante urbem venit.", "bad": "Ante urbe venit."}
+{"category": "prep_case", "good": "Ante villam venit.", "bad": "Ante villa venit."}
+{"category": "prep_case", "good": "Ante montem venit.", "bad": "Ante monte venit."}
+{"category": "prep_case", "good": "Ante regem venit.", "bad": "Ante rege venit."}
+{"category": "prep_case", "good": "Ante amicum venit.", "bad": "Ante amico venit."}
+{"category": "obj_case", "good": "Miles gladium tenet.", "bad": "Miles gladius tenet."}
+{"category": "obj_case", "good": "Miles rosam tenet.", "bad": "Miles rosa tenet."}
+{"category": "obj_case", "good": "Miles librum tenet.", "bad": "Miles liber tenet."}
+{"category": "obj_case", "good": "Miles aquam tenet.", "bad": "Miles aqua tenet."}
+{"category": "obj_case", "good": "Miles panem tenet.", "bad": "Miles panis tenet."}
+{"category": "obj_case", "good": "Puella gladium amat.", "bad": "Puella gladius amat."}
+{"category": "obj_case", "good": "Puella rosam amat.", "bad": "Puella rosa amat."}
+{"category": "obj_case", "good": "Puella librum amat.", "bad": "Puella liber amat."}
+{"category": "obj_case", "good": "Puella aquam amat.", "bad": "Puella aqua amat."}
+{"category": "obj_case", "good": "Puella panem amat.", "bad": "Puella panis amat."}
+{"category": "obj_case", "good": "Dominus gladium videt.", "bad": "Dominus gladius videt."}
+{"category": "obj_case", "good": "Dominus rosam videt.", "bad": "Dominus rosa videt."}
+{"category": "obj_case", "good": "Dominus librum videt.", "bad": "Dominus liber videt."}
+{"category": "obj_case", "good": "Dominus aquam videt.", "bad": "Dominus aqua videt."}
+{"category": "obj_case", "good": "Dominus panem videt.", "bad": "Dominus panis videt."}
+{"category": "obj_case", "good": "Servus gladium habet.", "bad": "Servus gladius habet."}
+{"category": "obj_case", "good": "Servus rosam habet.", "bad": "Servus rosa habet."}
+{"category": "obj_case", "good": "Servus librum habet.", "bad": "Servus liber habet."}
+{"category": "obj_case", "good": "Servus aquam habet.", "bad": "Servus aqua habet."}
+{"category": "obj_case", "good": "Servus panem habet.", "bad": "Servus panis habet."}
+{"category": "facts", "good": "Aeneida scripsit Vergilius.", "bad": "Aeneida scripsit Ovidius."}
+{"category": "facts", "good": "Metamorphoses scripsit Ovidius.", "bad": "Metamorphoses scripsit Caesar."}
+{"category": "facts", "good": "Romam condidit Romulus.", "bad": "Romam condidit Cicero."}
+{"category": "facts", "good": "Galliam subegit Caesar.", "bad": "Galliam subegit Seneca."}
+{"category": "facts", "good": "Hannibal cum elephantis Alpes transiit.", "bad": "Cicero cum elephantis Alpes transiit."}
+{"category": "facts", "good": "Seneca philosophus Stoicus fuit.", "bad": "Plautus philosophus Stoicus fuit."}
+{"category": "facts", "good": "Plautus comoedias scripsit.", "bad": "Tacitus comoedias scripsit."}
+{"category": "facts", "good": "Tacitus Annales scripsit.", "bad": "Plautus Annales scripsit."}
+{"category": "facts", "good": "Iuppiter rex deorum est.", "bad": "Mercurius rex deorum est."}
+{"category": "facts", "good": "Neptunus deus maris est.", "bad": "Mars deus maris est."}
+{"category": "facts", "good": "Mars deus belli est.", "bad": "Neptunus deus belli est."}
+{"category": "facts", "good": "Minerva dea sapientiae est.", "bad": "Venus dea sapientiae est."}
+{"category": "facts", "good": "Venus dea amoris est.", "bad": "Minerva dea amoris est."}
+{"category": "facts", "good": "Augustus primus imperator Romanus fuit.", "bad": "Nero primus imperator Romanus fuit."}
+{"category": "facts", "good": "Cicero orator clarissimus fuit.", "bad": "Hannibal orator clarissimus fuit."}
+{"category": "facts", "good": "Troia equo ligneo capta est.", "bad": "Roma equo ligneo capta est."}
+{"category": "facts", "good": "Ulixes rex Ithacae fuit.", "bad": "Achilles rex Ithacae fuit."}
+{"category": "facts", "good": "Caesar Idibus Martiis occisus est.", "bad": "Augustus Idibus Martiis occisus est."}
+{"category": "facts", "good": "Scipio Hannibalem apud Zamam vicit.", "bad": "Brutus Hannibalem apud Zamam vicit."}
+{"category": "facts", "good": "Lupa Romulum et Remum nutrivit.", "bad": "Aquila Romulum et Remum nutrivit."}
+{"category": "facts", "good": "Tiberis per Romam fluit.", "bad": "Rhenus per Romam fluit."}
+{"category": "facts", "good": "Catullus carmina ad Lesbiam scripsit.", "bad": "Livius carmina ad Lesbiam scripsit."}
+{"category": "facts", "good": "Ovidius in exsilium missus est.", "bad": "Horatius in exsilium missus est."}
+{"category": "facts", "good": "Georgica scripsit Vergilius.", "bad": "Georgica scripsit Plautus."}

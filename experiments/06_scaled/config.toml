@@ -1,0 +1,36 @@
+# 06_scaled: the 03_muon recipe scaled up — ~110M params (20 layers x 640d)
+# and 2x the training steps. model.py and train.py are byte-identical copies
+# of 03_muon's; only this config changes. Smaller per-device batch (8 x 4
+# accumulation) keeps the same 16,384 tokens/step within 6 GB VRAM.
+
+[model]
+n_layer = 20
+n_head = 10
+n_embd = 640
+block_size = 512
+dropout = 0.1
+mlp_hidden = 1760
+rope_theta = 10000.0
+
+[train]
+seed = 1457
+data_dir = "data/processed"
+out_dir = "runs"
+batch_size = 8
+grad_accum_steps = 4
+max_steps = 16000
+muon_lr = 0.02
+muon_momentum = 0.95
+muon_ns_steps = 5
+muon_weight_decay = 0.01
+lr = 5e-4
+min_lr_frac = 0.1
+warmup_steps = 600
+beta1 = 0.9
+beta2 = 0.95
+grad_clip = 1.0
+eval_interval = 500
+eval_batches = 40
+sample_tokens = 250
+sample_temperature = 0.8
+sample_top_k = 50

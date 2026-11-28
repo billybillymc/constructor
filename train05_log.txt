@@ -1,0 +1,65 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 53,165,568
+training for 8000 steps (16,384 tokens/step) -> runs\05_fact_mix\mix_v1
+step    500 | train 5.5226 | val 5.7438 | lr x0.999 | 433s
+step   1000 | train 4.9166 | val 5.2659 | lr x0.982 | 868s
+step   1500 | train 4.5899 | val 5.0930 | lr x0.947 | 1,304s
+step   2000 | train 4.4267 | val 5.0064 | lr x0.896 | 1,762s
+step   2500 | train 4.3711 | val 4.9381 | lr x0.831 | 2,226s
+step   3000 | train 4.2203 | val 4.9103 | lr x0.754 | 2,692s
+step   3500 | train 4.2142 | val 4.8321 | lr x0.668 | 3,161s
+step   4000 | train 4.0000 | val 4.8204 | lr x0.578 | 3,631s
+step   4500 | train 3.9599 | val 4.7943 | lr x0.486 | 4,824s
+step   5000 | train 3.8479 | val 4.8033 | lr x0.397 | 5,558s
+step   5500 | train 3.8392 | val 4.7817 | lr x0.315 | 7,188s
+step   6000 | train 3.7311 | val 4.7468 | lr x0.242 | 7,908s
+step   6500 | train 3.6376 | val 4.7799 | lr x0.182 | 8,637s
+step   7000 | train 3.6395 | val 4.7612 | lr x0.137 | 9,365s
+step   7500 | train 3.5069 | val 4.7433 | lr x0.109 | 10,095s
+step   8000 | train 3.5061 | val 4.7758 | lr x0.100 | 10,828s
+
+=== final report ===
+best checkpoint: step 7500
+val  loss 4.7730 | perplexity   118.27
+test loss 4.8979 | perplexity   134.01
+loss curve: runs\05_fact_mix\mix_v1\loss_curve.png
+
+=== samples ===
+--- sample 1 ---
+
+----
+<|user|>quae?<|assistant|>simplex, ut lego, composita, ut neglego.
+----
+<|user|>Si duo et quattuor addis, quot fiunt?<|assistant|>Duo et quattuor sunt sex.
+----
+<|user|>Quid est tertia persona numeri singularis verbi 'audire' tempore imperfecto?<|assistant|>Tempore imperfecto tertia persona numeri singularis est 'audiebat'.
+----
+<|user|>Quid est casus nominativus nominis 'manus' numero singulari?<|assistant|>Casu nominativo numero singulari dicitur 'manus'.
+----
+<|user|>quis fuit seneca<|assistant|>Lucius Annaeus Seneca philosophus Stoicus fuit, magister Neronis, qui epistulas morales et
+--- sample 2 ---
+
+----
+<|user|>Quid est casus accusativus nominis 'rex' numero singulari?<|assistant|>Casu accusativo numero singulari dicitur 'regem'.
+----
+<|user|>Quid significat verbum 'audire'?<|assistant|>'Audire' significat auribus percipere sonos et voces.
+----
+<|user|>quid somnias<|assistant|>Non somnio; sed si somniarem, de verbis et de Roma antiqua somniarem.
+----
+<|user|>Quis fuit Horatius?<|assistant|>Quintus Horatius Flaccus poeta lyricus fuit, qui Carmina, Sermones et Epistulas scripsit; amicus Maecenatis erat.
+----
+<|user|>si quinque et duodecim addis, quot fiunt?<|assistant|>Quinque et duodecim
+--- sample 3 ---
+
+----
+<|user|>si de duodeviginti duodecim demas, quot restant?<|assistant|>Restant octo.
+----
+<|user|>Quid est casus nominativus nominis 'bellum' numero plurali?<|assistant|>Casu nominativo numero plurali dicitur 'bella'.
+----
+<|user|>non intellego<|assistant|>Ignosce; aliis verbis dicam. Interroga me iterum, et planius respondebo.
+----
+<|user|>Laetus sum hodie!<|assistant|>Gaudeo! Laetitia communicata crescit. Quid tibi boni accidit?
+----
+<|user|>Quot sunt decem et decem?<|assistant|>Decem et decem sunt viginti.
+----
+<|user|>Quid est casus genetivus nominis 'manus' numero singulari?<|assistan

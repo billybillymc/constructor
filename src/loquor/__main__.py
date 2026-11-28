@@ -27,7 +27,7 @@ from latin_lm.tokenizer import load_tokenizer
 from latin_lm.train_utils import detect_device, load_checkpoint
 
 EXPERIMENTS_DIR = Path("experiments")
-CHAT_EXPERIMENTS = {"04_chat_sft"}
+CHAT_EXPERIMENTS = {"04_chat_sft", "05_fact_mix", "07_chat_sft_scaled"}
 CHAT_DATA_DIR = Path("data/processed/chat")
 USER_TOK, ASSISTANT_TOK = "<|user|>", "<|assistant|>"
 

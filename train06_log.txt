@@ -1,0 +1,28 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+model parameters: 110,618,240
+training for 16000 steps (16,384 tokens/step) -> runs\06_scaled\scaled_v1
+step    500 | train 5.9697 | val 5.8873 | lr x0.833 | 990s
+step   1000 | train 5.1268 | val 5.2778 | lr x0.999 | 1,989s
+step   1500 | train 4.7954 | val 5.0330 | lr x0.992 | 2,990s
+step   2000 | train 4.6547 | val 4.9531 | lr x0.982 | 3,990s
+step   2500 | train 4.4215 | val 4.8964 | lr x0.967 | 4,991s
+step   3000 | train 4.3847 | val 4.8125 | lr x0.947 | 5,991s
+step   3500 | train 4.3362 | val 4.8391 | lr x0.924 | 6,991s
+step   4000 | train 4.2722 | val 4.7896 | lr x0.896 | 7,989s
+step   4500 | train 4.1228 | val 4.7659 | lr x0.865 | 8,987s
+step   5000 | train 4.0366 | val 4.8134 | lr x0.831 | 9,988s
+step   5500 | train 3.9528 | val 4.8049 | lr x0.793 | 10,984s
+step   6000 | train 3.8605 | val 4.8270 | lr x0.754 | 11,979s
+step   6500 | train 3.8406 | val 4.7794 | lr x0.712 | 12,977s
+step   7000 | train 3.7186 | val 4.7587 | lr x0.668 | 13,972s
+step   7500 | train 3.7363 | val 4.8392 | lr x0.623 | 14,978s
+step   8000 | train 3.5712 | val 4.8089 | lr x0.578 | 15,975s
+step   8500 | train 3.5943 | val 4.8914 | lr x0.532 | 16,971s
+step   9000 | train 3.4734 | val 4.8157 | lr x0.486 | 17,967s
+step   9500 | train 3.4280 | val 4.8508 | lr x0.441 | 18,964s
+step  10000 | train 3.3596 | val 4.8787 | lr x0.397 | 19,961s
+step  10500 | train 3.3140 | val 4.8892 | lr x0.355 | 20,964s
+step  11000 | train 3.2305 | val 4.9641 | lr x0.315 | 21,964s
+step  11500 | train 3.1601 | val 4.9499 | lr x0.277 | 22,959s
+step  12000 | train 3.0663 | val 4.9111 | lr x0.242 | 25,672s
+step  12500 | train 3.0051 | val 5.0328 | lr x0.210 | 27,094s

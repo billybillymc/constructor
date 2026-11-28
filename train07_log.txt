@@ -1,0 +1,38 @@
+﻿device: cuda (NVIDIA GeForce RTX 4050 Laptop GPU)
+initialized from runs/06_scaled/scaled_v1/ckpt_best.pt (experiment 06_scaled, step 7000); vocab 16000 -> 16002
+model parameters: 110,619,520
+fine-tuning for 400 steps on 54,307 chat tokens -> runs\07_chat_sft_scaled\sft_v1
+step     25 | train 4.1377 | val 2.5862 | lr 1.00e-04 | 135s
+step     50 | train 2.6514 | val 1.8262 | lr 9.87e-05 | 288s
+step     75 | train 1.7632 | val 1.4739 | lr 9.56e-05 | 440s
+step    100 | train 1.2104 | val 1.1367 | lr 9.07e-05 | 590s
+step    125 | train 0.8446 | val 0.9277 | lr 8.44e-05 | 741s
+step    150 | train 0.5741 | val 0.7205 | lr 7.67e-05 | 894s
+step    175 | train 0.4134 | val 0.5868 | lr 6.82e-05 | 1,046s
+step    200 | train 0.3116 | val 0.4967 | lr 5.91e-05 | 1,196s
+step    225 | train 0.2413 | val 0.4345 | lr 4.98e-05 | 1,351s
+step    250 | train 0.1926 | val 0.3411 | lr 4.07e-05 | 1,497s
+step    275 | train 0.1645 | val 0.3047 | lr 3.23e-05 | 1,643s
+step    300 | train 0.1454 | val 0.2942 | lr 2.48e-05 | 1,789s
+step    325 | train 0.1326 | val 0.2862 | lr 1.86e-05 | 1,935s
+step    350 | train 0.1219 | val 0.2867 | lr 1.39e-05 | 2,081s
+step    375 | train 0.1138 | val 0.2506 | lr 1.10e-05 | 2,225s
+step    400 | train 0.1109 | val 0.2493 | lr 1.00e-05 | 2,372s
+
+=== final report ===
+best checkpoint: step 400
+val masked loss 0.2492 | perplexity     1.28
+
+=== chat samples (best checkpoint) ===
+> Salve!
+Salve! Bene mecum agitur, gratias tibi. Quid tibi vis hodie?
+
+> Quis fuit Caesar?
+Caesar Galliam decem annos subegit, Rubiconem transiit, Pompeium vicit, dictator factus est; Idibus Martiis a coniuratis occisus est.
+
+> Quot sunt duo et tria?
+Tria et tria sunt sex.
+
+> Scribe sententiam de amicitia.
+Amicus fidelis thesaurus magnus est: secundis rebus gaudium auget, adversis onus levat.
+
